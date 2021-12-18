@@ -38,9 +38,6 @@ class Server {
                 // Call run function and pass in the req and res object
                 this.routes.get("404").run(req, res);
             }
-            else if (route == "") {
-                this.routes.get("").run(req, res);
-            }
             else {
                 // Call run function and pass in the req and res object
                 this.routes.get(route).run(req, res);
